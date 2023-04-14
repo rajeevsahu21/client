@@ -12,8 +12,11 @@ export default function Modal({
   setOpen,
   title,
   enteredValue,
+  enteredValue1,
   setEnteredvalue,
+  setEnteredvalue1,
   label,
+  label1,
   content,
   onSuccess,
   successButton,
@@ -37,6 +40,18 @@ export default function Modal({
           variant="standard"
           onChange={(event) => {
             setEnteredvalue(event.target.value);
+          }}
+        />
+        <TextField
+          autoFocus
+          margin="dense"
+          id="contact"
+          label={label1}
+          fullWidth
+          value={enteredValue1}
+          variant="standard"
+          onChange={(event) => {
+            setEnteredvalue1(event.target.value);
           }}
         />
       </DialogContent>
