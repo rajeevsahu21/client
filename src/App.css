@@ -1,0 +1,13 @@
+#root {
+  text-align: center;
+}
+
+.after::after{
+  content: "";
+  background-color: #FF6000;
+  position: absolute;
+  padding: 12px;
+  bottom: -16px;
+  right: 0;
+  left: 0;
+}

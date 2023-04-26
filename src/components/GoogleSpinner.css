@@ -1,0 +1,40 @@
+.google-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+    height: 480px;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 0.5s infinite alternate;
+  }
+  
+  .dot1 {
+    background-color: #4285f4;
+    animation-delay: -0.4s;
+  }
+  
+  .dot2 {
+    background-color: #ea4335;
+    animation-delay: -0.2s;
+  }
+  
+  .dot3 {
+    background-color: #fbbc05;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
