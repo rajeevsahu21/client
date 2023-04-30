@@ -1,5 +1,4 @@
 import * as React from "react";
-import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -20,11 +19,9 @@ export default function UserTable({ filter }) {
 
   const getUser = async () => {
     setLoading(true);
-    console.log(filter);
     await axios
       .get(`/user/${filter}`)
       .then((res) => {
-        console.log("data", res?.data?.data);
         if (res?.data?.data.length < 1) return;
         setColumn(Object.keys(res?.data?.data[0]).slice(2, 11));
         setData(res.data.data);
